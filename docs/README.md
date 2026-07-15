@@ -6,18 +6,19 @@ Guides for setting up and managing net4sats paid-WiFi routers.
 
 | Guide | What it covers |
 |-------|----------------|
-| [Setup with conwrt](./setup-with-conwrt.md) | Flash a router with OpenWrt and deploy net4sats using the conwrt automation tool. Covers MT6000, MT3000, and COVR-X1860. |
+| [Setup with the wizard](./setup-with-wizard.md) | Use the net4sats wizard (desktop app) to discover, configure, and deploy net4sats onto an OpenWrt router. Covers prerequisites, the 9-step automated deploy, and troubleshooting. |
 | [Admin Panel Guide](./admin-panel-guide.md) | Navigate the configurationwizzard admin UI: dashboard, schema-driven settings, wallet, WiFi, devices, and captive portal. |
 
 ## Quick start
 
-1. Read the [Setup with conwrt](./setup-with-conwrt.md) guide to get
-   your router flashed and net4sats installed.
-2. Read the [Admin Panel Guide](./admin-panel-guide.md) to learn how to
-   configure pricing, manage mints, and monitor your access point.
+1. Flash your router to OpenWrt (use a runbook for your device if needed).
+2. Run the [setup wizard](./setup-with-wizard.md) to deploy net4sats.
+3. Read the [Admin Panel Guide](./admin-panel-guide.md) to configure pricing, manage mints, and monitor your access point.
 
-## Support
+## Source repositories
 
-- Source: [github.com/net4sats](https://github.com/orgs/net4sats/repositories)
-- Issues: file in the relevant repository
-- The admin panel has a [live demo](https://net4sats.github.io/configurationwizzard/) you can explore without a router.
+| Repo | Role |
+|------|------|
+| [net4sats-wizard-go](https://github.com/net4sats/net4sats-wizard-go) | Desktop onboarding wizard (Go binary, serves web UI at :8099) |
+| [configurationwizzard](https://github.com/net4sats/configurationwizzard) | Router-side admin dashboard + captive portal (Preact SPA) |
+| [tollgate-module-basic-go](https://github.com/net4sats/tollgate-module-basic-go) | Payment backend (Cashu + Lightning, runs on router) |

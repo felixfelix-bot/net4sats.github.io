@@ -36,16 +36,8 @@ served from `/net4sats/` on port 80. The root `/` redirects there.
 
 ### Demo mode (no router required)
 
-You can explore the admin panel without a router. A live demo runs on
-GitHub Pages:
-
-```
-https://net4sats.github.io/configurationwizzard/
-```
-
-This uses mock data — the dashboard, settings, wallet, and WiFi screens
-all render with sample values. Useful for evaluating the UX before
-deploying.
+You can explore the admin panel without a router by running the
+configurationwizzard locally with mock data:
 
 To run the demo locally:
 
